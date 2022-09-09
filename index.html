@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall Dinning Coupon Management</title>
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/dd0c766f8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header start  -->
+    <header class="container">
+    <!-- navbar start  -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+        <div class="container">
+            <a class="navbar-brand fw-bold ps-2" >
+                Hall Dinning
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Menu</a>
+              </li>
+              <li>
+                <button class="btn btn-outline-warning mx-5 px-2 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal2">Log In</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Moadal Section  -->
+        <!-- Modal -->
+        <section>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-group gap-4">
+                            <div class="card border border-2 rounded shadow-lg">
+                              <img src="images/breakfast.jpg" class="card-img-top img-fluid menu-img p-3" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Breakfast</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, doloribus.</p>
+                              </div>
+                            </div>
+                            <div class="card border border-2 rounded shadow-lg">
+                              <img src="images/lunch.jpg" class="card-img-top  img-fluid menu-img p-3" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Lunch</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat.</p>
+                              </div>
+                            </div>
+                            <div class="card border border-2 rounded shadow-lg">
+                              <img src="images/dinner.jpg" class="card-img-top img-fluid menu-img p-3" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Dinner</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, odio.</p>
+                              </div>
+
+                            </div>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <section>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel2">Log in Now</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group mx-sm-3">
+                          <label for="staticEmail2" class="sr-only">Email</label>
+                          <input type="email" class="form-control" id="inputPassword2" placeholder="Email"><br>
+                          <label for="staticEmail2" class="sr-only">Password</label>
+                          <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                        </div> 
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary fw-bold" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-warning text-light fw-bold">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- Moadal Section  -->
+    <!-- navbar end -->
+    <!-- slider start  -->
+    <section class="container mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-fluid" src="images/food2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                  <h1 class="text-center fw-bold">First We Eat,Then We <br> Do Everything Else</h1>
+                  <p class="text-center px-5"> A balanced diet can help students increase energy levels, promote a functioning immune system, improve their ability to cope with stress, and increase concentration and performance in school.</p>
+                    <button class="btn px-4 text-light" style="background-color: #c29510eb;">Get Coupon</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid" src="images/food2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h1 class="text-center fw-bold">Brain Requires healthy food</h1>
+                    <p class="text-center px-5">A balanced diet can help students increase energy levels, promote a functioning immune system, improve their ability to cope with stress, and increase concentration and performance in school.</p>
+                      <button class="btn px-4 text-light" style="background-color: #c29510eb;">Get Coupon</button>
+                  </div>
+              </div>
+              
+              <div class="carousel-item">
+                <img class="img-fluid" src="images/food2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h1 class="text-center fw-bold">First We Eat,Then We <br> Do Everything Else</h1>
+                    <p class="text-center px-5">A balanced diet can help students increase energy levels, promote a functioning immune system, improve their ability to cope with stress, and increase concentration and performance in school.</p>
+                      <button class="btn px-4 text-light" style="background-color: #c29510eb;">Get Coupon</button>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev border-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next border-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
+    </section>
+    <!-- slider end -->
+    </header>
+     <!-- header end -->
+    <main>
+        
+        <!-- About Section  -->
+        <section class="container welcome pb-5 mb-5">
+            <div class="text-center mx-5 px-3 text-white">
+              <p class="pt-5">Organic Products</p>
+              <h1 class="fw-bold pb-3 fs-1">About Our Organic</h1>
+              <div class="line2 line mb-1"></div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, fugiat porro. Hic perspiciatis doloribus possimus provident dignissimos perferendis placeat nulla!</p>
+              </div>
+              <div class="card-group mx-5">
+                <div class="card mx-3 border-0">
+                  <i class="fa-solid fa-house fa-3x icon"></i>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Always Fresh</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni exercitationem non eum, vel placeat omnis?</p>
+                  </div>
+                  
+                </div>
+                <div class="card mx-3 border-0">
+                  <i class="fa-solid fa-fan fa-3x icon"></i>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Always Healthy</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis accusamus totam iure ducimus quia deserunt!</p>
+                  </div>
+                  
+                </div>
+                <div class="card mx-3 border-0">
+                  <i class="fa-solid fa-gift fa-3x icon"></i>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Alwaya Tasty</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, illo. Totam repellat eos enim rerum!</p>
+                  </div>
+                  
+                </div>
+              </div>
+           </section>
+           <!-- About Section End -->
+
+           <!-- Coupon Section start -->
+           <section class="container facilities">
+            <h2>Coupon</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, quam!</p>
+            <div class="card-group gap-4">
+                <div class="card border border-2 rounded shadow-lg"  style="background-color: #e0c87ea1;">
+                  <img src="images/dailyy.png" class="card-img-top img-fluid p-4" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Daily</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  
+                </div>
+                <div class="card border border-2 rounded shadow-lg " style="background-color: #ddb231b3;">
+                  <img src="images/weekly.png" class="card-img-top img-fluid p-4" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">Weekly</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                  
+                </div>
+                <div class="card border border-2 rounded shadow-lg" style="background-color: #e0c87ea1;">
+                  <img src="images/monthly.png" class="card-img-top img-fluid p-4" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Monthly</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                  
+                </div>
+              </div>
+           </section>
+           <!-- Coupon Section end -->
+           <!-- Student Feedback start -->
+        <section class="container mt-5 mb-5">
+            <div class="py-3 px-4">
+              <h1 class="fw-bold">What Our Students Say</h1>
+                <p>It is a long established fact that a reader will be distracted by the 
+                  readable content of a page when looking at its layout</p>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container px-4 text-center">
+                    <div class="row gx-5 row-cols-lg-2 row-cols-sm-1 ">
+                      <div class="col">
+                       <div class="p-3 border border-2 border-light rounded-2 bg-white">
+                        <div class="d-flex justify-content-between mt-3">
+                          <div>
+                            <img class="img-fluid rounded" style="height:40px ;" src="images/comma.png" alt="">
+                          </div>
+                          <div style="color:gold">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                        </div>
+                        <div>
+                          <p class=" p-3">
+                            You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
+                          </p>
+                        </div>
+                        <div>
+                          <img class="img-fluid" src="images/student/student-5.png" style="height: 40px;" alt="">
+                          <div>
+                            <h5>Awlad Hossain</h5>
+                            <p>UI Designer</p>
+                          </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border border-2 border-light rounded-2 bg-white">
+                         <div class="d-flex justify-content-between mt-3">
+                           <div>
+                             <img class="img-fluid rounded" style="height:40px ;" src="images/comma.png" alt="">
+                           </div>
+                           <div style="color:gold">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star-half-stroke"></i>
+                           </div>
+                         </div>
+                         <div>
+                           <p class=" p-3">
+                             You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
+                           </p>
+                         </div>
+                         <div>
+                           <img class="img-fluid" src="images/student/student-6.png" style="height: 40px;" alt="">
+                           <div>
+                             <h5>Shanta Akter</h5>
+                             <p>Graphic Designe</p>
+                           </div>
+                         </div>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container px-4 text-center">
+                    <div class="row gx-5 row-cols-lg-2 row-cols-sm-1 ">
+                      <div class="col">
+                       <div class="p-3 border border-2 border-light rounded-2 bg-white">
+                        <div class="d-flex justify-content-between mt-3">
+                          <div>
+                            <img class="img-fluid rounded" style="height:40px ;" src="images/comma.png" alt="">
+                          </div>
+                          <div style="color:gold">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                        </div>
+                        <div>
+                          <p class=" p-3">
+                            You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
+                          </p>
+                        </div>
+                        <div>
+                          <img class="img-fluid" src="images/student/student-5.png" style="height: 40px;" alt="">
+                          <div>
+                            <h5>Awlad Hossain</h5>
+                            <p>UI Designer</p>
+                          </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border border-2 border-light rounded-2 bg-white">
+                         <div class="d-flex justify-content-between mt-3">
+                           <div>
+                             <img class="img-fluid rounded" style="height:40px ;" src="images/comma.png" alt="">
+                           </div>
+                           <div style="color:gold">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star-half-stroke"></i>
+                           </div>
+                         </div>
+                         <div>
+                           <p class=" p-3">
+                             You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
+                           </p>
+                         </div>
+                         <div>
+                           <img class="img-fluid" src="images/student/student-6.png" style="height: 40px;" alt="">
+                           <div>
+                             <h5>Shanta Akter</h5>
+                             <p>Graphic Designe</p>
+                           </div>
+                         </div>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container px-4 text-center">
+                    <div class="row gx-5 row-cols-lg-2 row-cols-sm-1 ">
+                      <div class="col">
+                       <div class="p-3 border border-2 border-light rounded-2 bg-white">
+                        <div class="d-flex justify-content-between mt-3">
+                          <div>
+                            <img class="img-fluid rounded" style="height:40px ;" src="images/comma.png" alt="">
+                          </div>
+                          <div style="color:gold">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                        </div>
+                        <div>
+                          <p class=" p-3">
+                            You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
+                          </p>
+                        </div>
+                        <div>
+                          <img class="img-fluid" src="images/student/student-5.png" style="height: 40px;" alt="">
+                          <div>
+                            <h5>Awlad Hossain</h5>
+                            <p>UI Designer</p>
+                          </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border border-2 border-light rounded-2 bg-white">
+                         <div class="d-flex justify-content-between mt-3">
+                           <div>
+                             <img class="img-fluid rounded" style="height:40px ;" src="images/comma.png" alt="">
+                           </div>
+                           <div style="color:gold">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star-half-stroke"></i>
+                           </div>
+                         </div>
+                         <div>
+                           <p class=" p-3">
+                             You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
+                           </p>
+                         </div>
+                         <div>
+                           <img class="img-fluid" src="images/student/student-6.png" style="height: 40px;" alt="">
+                           <div>
+                             <h5>Shanta Akter</h5>
+                             <p>Graphic Designe</p>
+                           </div>
+                         </div>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              <button class="carousel-control-prev c-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next c-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+          <!-- Student Feedback end -->
+          <!-- Call To Action -->
+
+        <section class="cta container">
+        <h1>For Any Query ...</h1>
+        <button class="btn px-4 text-light" style="background-color: #c29510eb;">Contact Us</button>
+     </section>
+
+     <!-- FAQ Start  -->
+     <section class="container my-5 py-5">
+        <div class="mx-lg-5 px-lg-5">
+          <div class="text-center mb-5">
+            <h1 class="fw-bold mb-3">Frequently Asked Questions</h1>
+            <p>It is a long established fact that a reader will be distracted by <br> the readable 
+              content of a page when looking at its layout.</p>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item border border-2 rounded-2 m-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fw-bold " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What are the differences between flexbox and grid?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p class="text-justify"> Flexbox offers greater control over alignment and space distribution between items. Being one-dimensional, Flexbox only deals with either columns or rows. This system works for smaller layouts, but cannot render complex displays such as text or document-centric properties that enable floats and columns.Grid has two-dimension layout capabilities which allow flexible widths as a unit of length. This compensates for the limitations in Flex.Flex Direction allows developers to align elements vertically or horizontally, which is used when developers create and reverse rows or columns.CSS Grid deploys fractional measure units for grid fluidity and auto-keyword functionality to automatically adjust columns or rows.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border border-2 rounded-2 m-3">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  What are the differences between tailwind CSS and CSS?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  Tailwind CSS is a utility-based framework based on CSS. It provides a catalog of CSS classes that makes the process of styling more convenient. Tailwind is not a UI Kit like Bootstrap, Foundation, or Bulma. It does not provide ready-made design blocks. It simply provides classes to make custom designs and prevents the user from writing lengthy code, such as that in Vanilla CSS.Tailwind provides developers with the customizability to make their own designs, which promotes a greater level of creativity as compared to the other frameworks that come with built-in UI components.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border border-2 rounded-2 m-3">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  What is CSS box model?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model. Box-Model has multiple properties in CSS.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border border-2 rounded-2 m-3">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  What is semantic elements/tags?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
+                <div class="accordion-body">
+                  The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages.Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than just presentation. For example, a <p> tag indicates that the enclosed text is a paragraph. This is both semantic and presentational because people know what paragraphs are, and browsers know how to display them.On the flip side of this equation, tags such as <b> and <i> are not semantic. They define only how the text should look (bold or italic), and don't provide any additional meaning to the markup.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ End  -->
+    </main>
+    <!-- footer section start  -->
+    <footer class="bg-dark text-center text-light mt-5 pt-3">
+        <div>
+          <h4 class="pt-4">Hall Dinning Coupon Management
+          </h4>
+          <p ><small>Sadia Afrin <br> Sajia Bintea Jahangir <br>
+            Atia Rahman Orthi</small></p>
+        </div>
+        <div class="container p-4 pb-0">
+          <section class="pb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+        </div>
+      </footer>
+      <!-- footer section start  -->
+   
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
