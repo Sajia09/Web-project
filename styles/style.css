@@ -28,7 +28,6 @@
 
 /* Coupon Section  */
 .facilities{
-    width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -53,6 +52,7 @@
 }
 
 .cta{
+   
     margin: 100px auto;
     width: 80%;
     background-color: #190f00;
